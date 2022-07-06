@@ -40,3 +40,7 @@ Sample JWT token
 ```sh
 eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI4MjFlZjE4OS04ZTBhLTQwMGUtODI1My04Y2RjZjFiMTVmOTgiLCJleHAiOjE2NTc5NzM3MjB9.4Evn4_w8-FDMlGO_gD7Qp96wiVMRzDqsyJIn3iKZ0MZKjopNggN6O42Pr0PuodaH_mfsjsxbDSklJ3PtyWKpnw
 ```
+
+<img width="1052" alt="Screenshot 2022-07-06 at 6 01 43 PM" src="https://user-images.githubusercontent.com/54174687/177550677-cd9a8b5e-60de-4a41-99ce-81a1b30bfbb5.png">
+
+
