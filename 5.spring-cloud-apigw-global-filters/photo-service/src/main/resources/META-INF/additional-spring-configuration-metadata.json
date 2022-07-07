@@ -1,0 +1,22 @@
+{"properties": [
+  {
+    "name": "gateway.ip",
+    "type": "java.lang.String",
+    "description": "A description for 'gateway.ip'"
+  },
+  {
+    "name": "token.expiration_time",
+    "type": "java.lang.String",
+    "description": "A description for 'token.expiration_time'"
+  },
+  {
+    "name": "token.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'token.secret'"
+  },
+  {
+    "name": "login.url.path",
+    "type": "java.lang.String",
+    "description": "A description for 'login.url.path'"
+  }
+]}
