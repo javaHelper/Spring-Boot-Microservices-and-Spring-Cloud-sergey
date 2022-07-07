@@ -39,4 +39,5 @@ curl --location --request GET 'http://localhost:8011/users-ws/users/status/check
 ```
 <img width="1273" alt="Screenshot 2022-07-07 at 10 59 59 PM" src="https://user-images.githubusercontent.com/54174687/177834477-cd2035d6-65e0-4853-af22-5def8adf0a4a.png">
 
+<img width="1045" alt="Screenshot 2022-07-07 at 11 01 26 PM" src="https://user-images.githubusercontent.com/54174687/177834700-70d1658c-3a0c-4f71-bc56-4b24116352d9.png">
 
