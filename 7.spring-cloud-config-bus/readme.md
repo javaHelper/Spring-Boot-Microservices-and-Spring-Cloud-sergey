@@ -79,6 +79,14 @@ POST -> `http://localhost:8012/actuator/busrefresh`
 
 now make the sure to hit POST request to login user - get new jwt token.
 
+GET -> 
+
+```sh
+curl --location --request GET 'http://localhost:8011/users-ws/users/status/check' \
+--header 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2M2ZjNzAxMC1jMDA5LTRiNmQtOTM1OS0zZWJjZDFiZTM1ZTkiLCJleHAiOjE2NTgwNTg0ODN9.qzMA4l606O1NXoXA5YZGVWeNfR79l66BPq7llAFFvoWaF9aJ5vV4MeItpHLxRej8vHVID4Q-MULBLn2VBTsSvA'
+```
+
+<img width="1271" alt="Screenshot 2022-07-07 at 5 33 57 PM" src="https://user-images.githubusercontent.com/54174687/177768861-39fb23a0-4f6d-4831-bc05-e8855f1f83ce.png">
 
 
 
