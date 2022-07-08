@@ -1,5 +1,11 @@
 # Asymetric Encryption using JKS and JCE
 
+@ Steps to create Key
+
+```sh
+keytool -genkeypair -alias apiEncryptionKey -keyalg RSA -dname "CN=Prateek Ashtikar, OU=API Development, O=appsdeveloperblog.com,L=Achalpur, S=ON, C=IN" -keypass prateek -keystore apiEncryptionKey.jks -storepass prateek
+```
+
 POST ->
 
 ```sh
