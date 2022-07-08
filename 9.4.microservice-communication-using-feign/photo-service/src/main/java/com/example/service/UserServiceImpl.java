@@ -6,16 +6,11 @@ import java.util.UUID;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.core.env.Environment;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import com.example.client.AlbumsServiceClient;
 import com.example.dto.UserDto;
@@ -23,8 +18,12 @@ import com.example.entity.UserEntity;
 import com.example.model.AlbumResponseModel;
 import com.example.repository.UserRepository;
 
+import feign.FeignException.FeignClientException;
+import lombok.extern.slf4j.Slf4j;
+
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserService {
 
 	@Autowired
@@ -33,10 +32,6 @@ public class UserServiceImpl implements UserService {
 	private ModelMapper modelMapper;
 	@Autowired
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
-	@Autowired
-	private RestTemplate restTemplate;
-	@Autowired
-	private Environment environment;
 	@Autowired
 	private AlbumsServiceClient albumsServiceClient;
 
@@ -87,6 +82,7 @@ public class UserServiceImpl implements UserService {
 		
 		// Inter-service communication using the REST template
 		List<AlbumResponseModel> albumsList = albumsServiceClient.getAlbums(userId);
+		
 		userDto.setAlbums(albumsList);
 		return userDto;
 	}
