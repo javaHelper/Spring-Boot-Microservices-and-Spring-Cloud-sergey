@@ -14,7 +14,6 @@ public class FeignErrorDecoder implements ErrorDecoder {
 	@Autowired
 	private Environment environment;
 
-
 	@Override
 	public Exception decode(String methodKey, Response response) {
 		switch (response.status()) {
@@ -25,7 +24,7 @@ public class FeignErrorDecoder implements ErrorDecoder {
 		case 404: {
 			if (methodKey.contains("getAlbums")) {
 				return new ResponseStatusException(HttpStatus.valueOf(response.status()),
-						environment.getProperty("albums.exceptions.albums-not-found"));
+						this.getMessageAlbumNotFound());
 			}
 			break;
 		}
@@ -35,4 +34,7 @@ public class FeignErrorDecoder implements ErrorDecoder {
 		return null;
 	}
 
+	private String getMessageAlbumNotFound() {
+		return environment.getProperty("albums.exceptions.albums-not-found");
+	}
 }
