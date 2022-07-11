@@ -2,9 +2,9 @@
 
 Downloads:
 
-Elasticsearch - https://www.elastic.co/downloads/elasticsearch
-Logstash - https://www.elastic.co/downloads/logstash
-Kibana - https://www.elastic.co/downloads/kibana
+- Elasticsearch - https://www.elastic.co/downloads/elasticsearch
+- Logstash - https://www.elastic.co/downloads/logstash
+- Kibana - https://www.elastic.co/downloads/kibana
 
 # Start Elasticsearch
 
@@ -102,4 +102,17 @@ bin/elasticsearch-create-enrollment-token --scope kibana
 users@Prateeks-MacBook-Pro logstash-8.3.2 % bin/logstash -f simple-config.conf
 ```
 
+# Start kibana
 
+```sh
+prateekashtikar@Prateeks-MacBook-Pro kibana-8.3.2 % bin/kibana
+[2022-07-11T12:38:10.680+05:30][INFO ][plugins-service] Plugin "cloudSecurityPosture" is disabled.
+[2022-07-11T12:38:10.769+05:30][INFO ][http.server.Preboot] http server running at http://localhost:5601
+[2022-07-11T12:38:10.823+05:30][INFO ][plugins-system.preboot] Setting up [1] plugins: [interactiveSetup]
+[2022-07-11T12:38:10.829+05:30][INFO ][preboot] "interactiveSetup" plugin is holding setup: Validating Elasticsearch connection configuration…
+[2022-07-11T12:38:10.892+05:30][INFO ][root] Holding setup until preboot stage is completed.
+
+i Kibana has not been configured.
+
+Go to http://localhost:5601/?code=843189 to get started.
+```
