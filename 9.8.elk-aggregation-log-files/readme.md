@@ -45,6 +45,15 @@ yellow open users-ws-2022.07.11  9T7it1V9SdSyoWHjg2YOKA 1 1 92 0 215.2kb 215.2kb
 yellow open albums-ws-2022.07.11 SSNTi7yyQ3KWDucynGL70w 1 1 38 0  74.5kb  74.5kb
 ```
 
+- See more details - 
+
+```sh
+https://localhost:9200/users-ws-2022.07.11/_search?q=*
+https://localhost:9200/albums-ws-2022.07.11/_search?q=*
+
+https://localhost:9200/albums-ws-2022.07.11/_search?q=message:Eureka
+```
+
 # simple-config.conf
 Note: Your username and password should match with when you actually start the elasticsearch, place this file in 
 
@@ -105,7 +114,7 @@ users@Prateeks-MacBook-Pro logstash-8.3.2 % bin/logstash -f simple-config.conf
 # Start kibana
 
 ```sh
-prateekashtikar@Prateeks-MacBook-Pro kibana-8.3.2 % bin/kibana
+users@Prateeks-MacBook-Pro kibana-8.3.2 % bin/kibana
 [2022-07-11T12:38:10.680+05:30][INFO ][plugins-service] Plugin "cloudSecurityPosture" is disabled.
 [2022-07-11T12:38:10.769+05:30][INFO ][http.server.Preboot] http server running at http://localhost:5601
 [2022-07-11T12:38:10.823+05:30][INFO ][plugins-system.preboot] Setting up [1] plugins: [interactiveSetup]
@@ -116,3 +125,12 @@ i Kibana has not been configured.
 
 Go to http://localhost:5601/?code=843189 to get started.
 ```
+
+Note: Steps need to be performed to be able to see data on dashboard
+
+# See Logs in Kibana
+
+<img width="1500" alt="Screenshot 2022-07-11 at 1 10 20 PM" src="https://user-images.githubusercontent.com/54174687/178213199-e4200210-556f-47fe-b524-590785bc56fd.png">
+
+<img width="1489" alt="Screenshot 2022-07-11 at 1 10 51 PM" src="https://user-images.githubusercontent.com/54174687/178213301-1fbaf13c-f3e4-4df1-86a9-ec04b1f5a1f5.png">
+
