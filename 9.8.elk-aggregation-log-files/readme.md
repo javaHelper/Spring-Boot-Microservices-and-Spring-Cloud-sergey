@@ -86,4 +86,20 @@ output {
 
 <img width="827" alt="Screenshot 2022-07-11 at 1 04 03 PM" src="https://user-images.githubusercontent.com/54174687/178212187-4b5e3e93-0b3f-42d2-a742-2226e01c3862.png">
 
+# Start All the services
+
+<img width="349" alt="Screenshot 2022-07-11 at 1 05 39 PM" src="https://user-images.githubusercontent.com/54174687/178212417-e42e77dc-e413-4a91-ae23-8ebbaeae0db7.png">
+
+# In case your token is expired, create new one 
+
+```sh
+bin/elasticsearch-create-enrollment-token --scope kibana
+```
+
+# Start logstash
+
+```sh
+users@Prateeks-MacBook-Pro logstash-8.3.2 % bin/logstash -f simple-config.conf
+```
+
 
