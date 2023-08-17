@@ -4,6 +4,9 @@ Spring Boot Microservices and Spring Cloud
 # Links
 
 - https://cloud.spring.io/spring-cloud-gateway/reference/html/#gateway-request-predicates-factories
+- https://cloud.spring.io/spring-cloud-gateway/reference/html/#gatewayfilter-factories
+- https://cloud.spring.io/spring-cloud-gateway/reference/html/#global-filters
+- https://cloud.spring.io/spring-cloud-gateway/reference/html/#httpheadersfilters
 
 Built-in Route Predicate Factories in Spring Cloud API Gateway
 Below is a list of built-in predicates that you can use when creating routes in Spring Cloud API Gateways. These are built-in predicates and you do not need to write any additional Java code for them to work.
